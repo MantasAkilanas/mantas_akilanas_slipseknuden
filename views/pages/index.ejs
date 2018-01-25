@@ -12,9 +12,24 @@
 <body>
     <% include ../partials/topNavbar %>
         <div id="container">
-
             <% include ../partials/sideNavbar %>
-
+                <main>
+                    <%  frontpageProducts.forEach((element)=>{ %>
+                        <div class="frontpageProducts">
+                            <img src="./img/<%=element.billede %>">
+                            <div class="productText">
+                                <h3>
+                                    <%= element.name %>
+                                </h3>
+                                <p>
+                                    <%= element.text %>
+                                </p>
+                                <p class="læsMere">DKK
+                                    <%= element.pris%>,-</p>
+                            </div>
+                        </div>
+                        <%})%>
+                </main>
         </div>
 
 </body>

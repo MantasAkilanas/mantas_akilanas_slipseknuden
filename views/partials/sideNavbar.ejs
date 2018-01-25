@@ -1,3 +1,4 @@
+<div id="sidenav">
     <h2>PRODUKTER</h2>
     <nav id="sidenav">
         <ul>
@@ -18,3 +19,15 @@
             </li>
         </ul>
     </nav>
+    <% sidebar.forEach((element)=>{ %>
+        <div class="sidebarStuff">
+            <h3>
+                <%= element.title %>
+            </h3>
+            <p>
+                <%= element.text %>
+            </p>
+            <p class="læsMere">LÆS MERE...</p>
+        </div>
+        <%})%>
+</div>
