@@ -38,6 +38,11 @@ header img{
     background-color: black;
     margin-bottom: 1px;
 }
+#sidenav a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
 header img{
     margin-bottom: 42px;
 }
@@ -62,12 +67,16 @@ header img{
     font-weight: bold;
 }
 main{
+    flex-basis: 77%;
     display:flex;
     flex-wrap: wrap;
 }
-/* .frontpageProducts{
-    margin:30px
-} */
+.frontpageProducts{
+   flex-basis: 50%;
+}
+.infoBox{
+    flex-basis: 100%;
+}
 .productText{
     margin-left: 120px;
 }
@@ -79,4 +88,24 @@ main{
 }
 .productText p:first-of-type{
     margin:17px 0 26px 0;
+}
+.info{
+    text-align: center;
+    width:120px;
+    height: 26px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 26px;
+}
+body{
+    width:1040px;
+    margin:auto;
+}
+#infoBox h3{
+    font-size: 14px;
+}
+#infoBox p:first-of-type{
+    margin:16px 0;
 }
