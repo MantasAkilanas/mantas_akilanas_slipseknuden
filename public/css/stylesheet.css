@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+nav ul{
+    list-style: none;
+}
+#mainnav ul li{
+    margin: 15px 0 10px 20px;
+}
+#mainnav ul{
+    display:flex;
+    background-color: black;
+}
+nav a{
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav input{
+    margin-left: 40px;
+}
+nav img{
+    height: 18px;
+}
+header img{
+    margin-left: 15px;
+}
+#sidenav{
+    width: 218px;
+    margin-left: 20px;
+}
+#sidenav li{
+    padding:30px 0 15px 30px;
+    background-color: black;
+    margin-bottom: 1px;
+}
+#container h2{
+    font-size: 16px;
+    margin: 0 0 18px 58px;
+}
+#container nav a{
+    font-size:10px;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}

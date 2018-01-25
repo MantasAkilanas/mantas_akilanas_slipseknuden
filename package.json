@@ -1,0 +1,24 @@
+{
+  "name": "mantas_akilanas_slipseknuden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MantasAkilanas/mantas_akilanas_slipseknuden.git"
+  },
+  "author": "mantarias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MantasAkilanas/mantas_akilanas_slipseknuden/issues"
+  },
+  "homepage": "https://github.com/MantasAkilanas/mantas_akilanas_slipseknuden#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-ejs-layouts": "^2.3.1"
+  }
+}
