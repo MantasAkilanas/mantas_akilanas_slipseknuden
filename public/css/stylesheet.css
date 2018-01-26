@@ -109,3 +109,6 @@ body{
 #infoBox p:first-of-type{
     margin:16px 0;
 }
+.productText p:last-of-type{
+    margin-top: 20px;
+}
