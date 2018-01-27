@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Om</title>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <% include ../partials/topNavbar %>
+        <div id="container">
+            <% include ../partials/sideNavbar %>
+                <main>
+                    <div id="about">
+                        <h2>
+                            <%= about.title %>
+                        </h2>
+                        <p>
+                            <%= about.text %>
+                        </p>
+                        <img src="./img/<%=about.billede%>">
+                    </div>
+                    <div id="medarbejder">
+                        <% medarbejder.forEach((element)=>{%>
+                            <div class="medarbejder">
+                                <div>
+                                    <img src="./img/<%=element.billede%>">
+                                </div>
+                                <div>
+                                    <h4><%=element.navn%></h4>
+                                    <p class="læsMere"><%=element.role%></p>
+                                    <p><%=element.email%></p>
+                                </div>
+                            </div>
+                            <%})%>
+                    </div>
+                </main>
+                <% include ../partials/footer %>
+        </div>
+        
+</body>
+
+</html>

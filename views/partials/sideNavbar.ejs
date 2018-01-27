@@ -19,15 +19,37 @@
             </li>
         </ul>
     </nav>
-    <% sidebar.forEach((element)=>{ %>
-        <div class="sidebarStuff">
-            <h3>
-                <%= element.title %>
-            </h3>
-            <p>
-                <%= element.text %>
-            </p>
-            <p class="læsMere">LÆS MERE...</p>
-        </div>
-        <%})%>
+    <% if(pageID == "index"){ %>
+        <% sidebar.forEach((element)=>{ %>
+            <div class="sidebarStuff">
+                <h3>
+                    <%= element.title %>
+                </h3>
+                <p>
+                    <%= element.text %>
+                </p>
+                <p class="læsMere">LÆS MERE...</p>
+            </div>
+            <%})%>
+                <%} else{ %>
+                    <% sidebar.forEach((element)=>{ %>
+                        <div class="sideBar">
+                            <div class="imgContainer">
+                                <img src="./img/<%=element.billede%>"></img>
+                            </div>
+                            <div>
+                                <h4>
+                                    <%= element.name%>
+                                </h4>
+                                <p>
+                                    <%= element.text%>
+                                </p>
+                                <p class="læsMere">DKK
+                                    <%= element.pris %>,-
+                                </p>
+                            </div>
+                            <p class="info">INFO</p>
+                        </div>
+                        <%})%>
+                            <%} %>
 </div>

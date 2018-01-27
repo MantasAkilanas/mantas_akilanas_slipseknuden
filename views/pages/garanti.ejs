@@ -5,13 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Garanti</title>
     <% include ../partials/head %>
 </head>
 
 <body>
     <% include ../partials/topNavbar %>
-        <% include ../partials/sideNavbar %>
+        <div id="container">
+            <% include ../partials/sideNavbar %>
+                <main>
+                    <div id="garanti">
+                        <h2>
+                            <%=garantitext.title%>
+                        </h2>
+                        <p>
+                            <%=garantitext.text1%>
+                        </p>
+                        <p>
+                            <%=garantitext.text2%>
+                        </p>
+                        <div id="retur">
+                            <% garantitext.retur.forEach((element,index)=>{%>
+                                <% if (index > 0){%>
+                                    <p class="læsMere">
+                                        <%=element.info%>
+                                    </p>
+                                    <% }else{%>
+                                        <p>
+                                            <%=element.info%>
+                                        </p>
+                                        <%}%>
+                                            <% });%>
+                        </div>
+                        <img src="./img/<%=garantitext.billede%>">
+                    </div>
+                </main>
+                <% include ../partials/footer%>
+        </div>
 </body>
 
 </html>

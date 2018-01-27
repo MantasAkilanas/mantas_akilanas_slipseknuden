@@ -1,32 +1,6 @@
+const json = require("../data/index");
 module.exports = (app) => {
     app.get("/", (req, res) => {
-        res.render("pages/index", {
-            sidebar: [{
-                title: "SLIPSKNUDEN ONLINE.",
-                text: "VI LANCERER NU VORES HJEMMESIDEN MED BILLEDER AF VORES ALLER FINESTE SLIPS."
-            }, {
-                title: "SLIPSKNUDEN ONLINE.",
-                text: "VI LANCERER NU VORES HJEMMESIDEN MED BILLEDER AF VORES ALLER FINESTE SLIPS."
-            }],
-            frontpageProducts: [{
-                name: "Sleek Fabric UK",
-                text: "Sort nat, slipset til den ultra stilbeviste",
-                pris: 900,
-                billede: "1_klassisk_brun.jpg"
-            }, {
-                name: "Sleek Fabric UK",
-                text: "Sort nat, slipset til den ultra stilbeviste",
-                pris: 900,
-                billede: "2_stribet_stil.jpg"
-            }],
-            frontpageInfo: {
-                title: "Hvor startede det hele henne - hvem var de første der bar slips?",
-                firstP: "Man skal helt tilbage til omkring år 1660, hvor kong Ludvig den 14. regerede Frankrig, for at finde starten på det hele. Kongen gik utrolig meget op i mode og beklædning. Efter at kroatiske soldater havde besejret Det Osmanniske Rige, deltog kongen i et optog hvor alle soldaterne skulle gå forbi. Her bemærkede han at alle soldaterne bar et stykke rødt stof om halsen. Kongen var så begejstret for det lille stykke klæde, at han valgte at hans kongelige regiment skulle bære halsklude i farven rød.",
-                secondP: "Halskluden blev hurtig populær i resten af Europa, og var man en herre med stil, skulle man bære det. Efterhånden som tiden gik og moden skiftede, blev kluden mere kraftig. Da man når til 1800 tallet, var der en modeskaber fra England, som af pratiske årsager valgte at gøre kluden mindre, så den ikke var så fremtrædende - det har udviklet sig til det vi i dag kalder slips. I dag er det ikke længere noget der kun bæres af en bestemt gruppe mennesker eller til jakkesæt. I dag bæres det af mange forskellige typer mennesker og slips findes i næsten lige så mange udgaver."
-            }
-        })
-    })
-    app.get("/garanti", (req, res) => {
-        res.render("pages/garanti");
+        res.render("pages/index", json)
     })
 }

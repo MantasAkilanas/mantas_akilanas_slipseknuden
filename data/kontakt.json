@@ -1,0 +1,17 @@
+{
+    "pageID": "kontakt",
+    "sidebar": [
+        {
+            "name": "Shoon slips",
+            "text": "Klassisk Brun",
+            "pris": 900,
+            "billede": "1_klassisk_brun.jpg"
+        },
+        {
+            "name": "US Imports",
+            "text": "Sølvpil",
+            "pris": 900,
+            "billede": "2_stribet_stil.jpg"
+        }
+    ]
+}

@@ -17,8 +17,11 @@ nav ul{
 }
 nav a{
     color:white;
-    font-size: 18px;
+    
     text-decoration: none;
+}
+#mainnav a{
+    font-size: 18px;
 }
 nav input{
     margin-left: 40px;
@@ -46,7 +49,7 @@ header img{
 header img{
     margin-bottom: 42px;
 }
-#container h2{
+#sidenav h2{
     font-size: 16px;
     margin: 0 0 18px 58px;
 }
@@ -98,6 +101,7 @@ main{
     border-radius: 15px;
     font-size: 14px;
     line-height: 26px;
+    margin-top: 20px;
 }
 body{
     width:1040px;
@@ -109,6 +113,78 @@ body{
 #infoBox p:first-of-type{
     margin:16px 0;
 }
-.productText p:last-of-type{
-    margin-top: 20px;
+.sideBar{
+    display:flex;
+    flex-wrap: wrap;
+    min-height: auto
+}
+.imgContainer img{
+    width:100px;
+    height: auto;
+}
+.sideBar p:first-of-type{
+    margin-bottom:38px;
+}
+.sideBar .info{
+    margin-left: 56px;
+}
+#about{
+ margin-left: 100px;
+}
+#about img{
+    margin-left: 220px;;
+    width:310px;
+}
+.medarbejder img{
+    width:100px;
+    height: auto;
+}
+footer {
+    margin:100px auto 20px ;
+}
+#medarbejder{
+    display:flex;
+    flex-wrap: wrap;
+}
+.medarbejder:first-of-type{
+    flex-basis: 100%;
+}
+.medarbejder{
+    margin-left: 100px;
+    display: flex;
+}
+.medarbejder h4{
+    margin:100px 0 10px 20px;
+}
+.medarbejder p{
+    margin-left: 20px;
+}
+.sideBar:first-of-type{
+    margin-top: 45px;
+}
+#infoBox{
+    margin-left: 143px;
+}
+footer ul{
+    display:flex;
+    list-style: none;
+}
+footer li{
+    margin-left: 37px;
+}
+#garanti{
+    margin-left:110px;
+}
+#garanti h2 {
+    font-size: 14px;
+    margin-bottom: 19px;
+}
+#garanti>p{
+margin-bottom: 40px;
+}
+#retur p{
+    margin-bottom: 16px;
+}
+#garanti img{
+    margin-left: 200px;
 }

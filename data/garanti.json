@@ -1,0 +1,36 @@
+{
+    "pageID": "garanti",
+    "sidebar": [
+        {
+            "name": "Shoon slips",
+            "text": "Klassisk Brun",
+            "pris": 900,
+            "billede": "1_klassisk_brun.jpg"
+        },
+        {
+            "name": "US Imports",
+            "text": "Sølvpil",
+            "pris": 900,
+            "billede": "2_stribet_stil.jpg"
+        }
+    ],
+    "garantitext": {
+        "title": "REKLAMATION",
+        "text1": "slipseknuden.eu kontrollerer alle varer inden afsendelse. Skulle der alligevel være fejl ved en ekspedition henvises til den returseddel, der følger med din ordre. Denne returseddel udfyldes og returneres sammen med varerne. Varer der returneres med reklamation, bliver repareret eller erstattet af en ny leverance indenfor 7 dage fra modtagelsen. Haves erstatningsvare ikke, vil det betalte beløb blive krediteret indenfor 7 dage. Derudover gælder naturligvis den 2-årige reklamationsfrist i henhold til købeloven.",
+        "text2":"Du er også velkommen til at kontakte vores kundeservice på salg@slipseknuden.eu eller tlf. (+45) 5944-1234. Vi beder dig have dit ordrenummer ved hånden.",
+        "retur":[{
+            "info":"Returadressen er:"
+        },{
+            "info":"Slipseknuden"
+        },{
+            "info":"Slipsevej 79"
+        },{
+            "info":"4000 Holbæk"
+        },{
+            "info":"Telefon: 5944-1234"
+        },{
+            "info":"slips@slipseknuden.dk"
+        }],
+        "billede":"10_tern.jpg"
+    }
+}

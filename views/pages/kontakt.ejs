@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forside</title>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <% include ../partials/topNavbar %>
+        <div id="container">
+            <% include ../partials/sideNavbar %>
+                <main>
+                    <div>
+                        <h2>KONTAKT</h2>
+                        <div>
+                            <label for="navn">NAVN</label>
+                            <input type="text" id="navn">
+                        </div>
+                        <div>
+                            <label for "email">E-MAIL</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div>
+                            <label for "besked">BESKED</label>
+                            <textarea id="besked">
+                        </div>
+                        <div>
+                        </div>
+                </main>
+
+
+                <% include ../partials/footer %>
+                    </div>
+</body>
+
+</html>
