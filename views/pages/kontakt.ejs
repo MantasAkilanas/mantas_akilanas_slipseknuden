@@ -15,7 +15,7 @@
             <% include ../partials/sideNavbar %>
                 <main>
                     <div id="kontakt">
-                        <form id="kontaktform">
+                        <form id="kontaktform" method="POST" action="/kontakt">
                             <h2 id="kontakth2">KONTAKT</h2>
                             <div class="formdiv">
                                 <label class="læsMere" for="navn">NAVN</label>
@@ -50,6 +50,7 @@
 
         <% include ../partials/footer %>
             </div>
+            <script src="/js/kontakt.js"></script>
 </body>
 
 </html>
