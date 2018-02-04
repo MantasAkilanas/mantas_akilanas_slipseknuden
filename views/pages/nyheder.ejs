@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nyheder</title>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <% include ../partials/topNavbar %>
+        <div id="container">
+            <% include ../partials/sideNavbar %>
+                <main>
+                    <div id="nyheder">
+                        <h2 id="nyhederh2">NYHEDER</h2>
+                        <% for(let i = nyheder.length; i>0;i--){%>
+                            <p class="orange">
+                                <%=nyheder[i-1].dato%>
+                            </p>
+                            <p>
+                                <%=nyheder[i-1].title%>
+                            </p>
+                            <p>
+                                <%=nyheder[i-1].text%>
+                                    <span class="læsMere">LÆS MERE...</span>
+                            </p>
+                            <%}%>
+                                <img src="./img/<%=billede%>">
+                    </div>
+                </main>
+        </div>
+
+
+        <% include ../partials/footer %>
+
+</body>
+
+</html>

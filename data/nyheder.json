@@ -1,0 +1,40 @@
+{
+    "pageID": "nyheder",
+    "sidebar": [
+        {
+            "name": "Shoon slips",
+            "text": "Klassisk Brun",
+            "pris": 900,
+            "billede": "1_klassisk_brun.jpg"
+        },
+        {
+            "name": "US Imports",
+            "text": "Sølvpil",
+            "pris": 900,
+            "billede": "2_stribet_stil.jpg"
+        }
+    ],
+    "nyheder": [
+        {
+            "dato": "30/08/2010",
+            "title": "Nu er de her!",
+            "text": "Se vores nyeste slips under produkter!"
+        },
+        {
+            "dato": "7/03/2011",
+            "title": "Se her!",
+            "text": "Nye modeslips er på vej til hjemmesiden."
+        },
+        {
+            "dato": "15/04/2013",
+            "title": "Slips!",
+            "text": "Nye slips i vores sortiment."
+        },
+        {
+            "dato": "02/01/2014",
+            "title": "Slipsknuden online.",
+            "text": "Vi lancerer nu vores hjemmesiden med billeder af vores aller fineste slips. "
+        }
+    ],
+    "billede":"10_tern.jpg"
+}

@@ -31,11 +31,11 @@
                 <p class="læsMere">LÆS MERE...</p>
             </div>
             <%})%>
-                <%} else{ %>
+                <%} else if (pageID == "produkter"){%>
                     <% sidebar.forEach((element)=>{ %>
                         <div class="sideBar">
                             <div class="imgContainer">
-                                <img src="./img/<%=element.billede%>"></img>
+                                <img src="/img/<%=element.billede%>"></img>
                             </div>
                             <div>
                                 <h4>
@@ -44,12 +44,33 @@
                                 <p>
                                     <%= element.text%>
                                 </p>
-                                <p class="læsMere">DKK
-                                    <%= element.pris %>,-
+                                <p class="red">TILBUD</p>
+                                <p class="læsMere">DKK<span class="red">
+                                    <%= element.pris %>,-</span>
                                 </p>
                             </div>
                             <p class="info">INFO</p>
                         </div>
                         <%})%>
-                            <%} %>
+                            <%} else{ %>
+                                <% sidebar.forEach((element)=>{ %>
+                                    <div class="sideBar">
+                                        <div class="imgContainer">
+                                            <img src="./img/<%=element.billede%>"></img>
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                <%= element.name%>
+                                            </h4>
+                                            <p>
+                                                <%= element.text%>
+                                            </p>
+                                            <p class="læsMere">DKK
+                                                <%= element.pris %>,-
+                                            </p>
+                                        </div>
+                                        <p class="info">INFO</p>
+                                    </div>
+                                    <%})%>
+                                        <%} %>
 </div>

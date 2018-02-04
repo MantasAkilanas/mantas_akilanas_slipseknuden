@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Produkter</title>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <% include ../partials/topNavbar %>
+        <div id="container">
+            <% include ../partials/sideNavbar %>
+                <main>
+                    <div id="produkter">
+                        <% produkter.forEach((element, index)=>{%>
+                            <div class="produkt">
+                                <div class="produkterimg">
+                                    <img src="/img/<%=element.billede%>"> </div>
+                                <div class="produktinfo">
+                                    <p class="læsMere">
+                                        <%=element.title%>
+                                    </p>
+                                    <p>
+                                        <%=element.color%>
+                                    </p>
+                                    <p class="læsMere">DKK
+                                        <%=element.price%>,-</p>
+                                </div>
+                                <a href="/produkter/<%=index%> "><p class="info">INFO</p>
+                                </a>
+                            </div>
+                            <%})%>
+                    </div>
+                </main>
+        </div>
+
+
+        <% include ../partials/footer %>
+
+</body>
+
+</html>

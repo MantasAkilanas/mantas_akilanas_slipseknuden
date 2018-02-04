@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forside</title>
+    <title>Kontakt</title>
     <% include ../partials/head %>
 </head>
 
@@ -14,27 +14,42 @@
         <div id="container">
             <% include ../partials/sideNavbar %>
                 <main>
-                    <div>
-                        <h2>KONTAKT</h2>
-                        <div>
-                            <label for="navn">NAVN</label>
-                            <input type="text" id="navn">
+                    <div id="kontakt">
+                        <form id="kontaktform">
+                            <h2 id="kontakth2">KONTAKT</h2>
+                            <div class="formdiv">
+                                <label class="læsMere" for="navn">NAVN</label>
+                                <input type="text" id="navn">
+                            </div>
+                            <div class="formdiv">
+                                <label class="læsMere" for="email">E-MAIL</label>
+                                <input type="text" id="email">
+                            </div>
+                            <div class="formdiv">
+                                <label class="læsMere" for="besked">BESKED</label>
+                                <textarea id="besked">
+                                    </textarea>
+                            </div>
+                            <div class="formdiv">
+                                <button>SEND</button>
+                            </div>
+                        </form>
+                        <img id="mainimg" src="./img/<%=mainimg%>">
+                        <div id="kontaktinfo">
+                            <% info.forEach((element)=>{%>
+                                <p class="læsMere">
+                                    <%=element.info%>
+                                </p>
+                                <%})%>
                         </div>
-                        <div>
-                            <label for "email">E-MAIL</label>
-                            <input type="text" id="email">
-                        </div>
-                        <div>
-                            <label for "besked">BESKED</label>
-                            <textarea id="besked">
-                        </div>
-                        <div>
-                        </div>
-                </main>
-
-
-                <% include ../partials/footer %>
+                        <img id="map" src="./img/<%=map%>">
                     </div>
+                </main>
+        </div>
+
+
+        <% include ../partials/footer %>
+            </div>
 </body>
 
 </html>

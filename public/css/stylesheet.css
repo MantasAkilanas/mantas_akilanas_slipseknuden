@@ -188,3 +188,103 @@ margin-bottom: 40px;
 #garanti img{
     margin-left: 200px;
 }
+#kontaktform{
+    margin-left: 95px;
+    width: 225px;
+}
+.formdiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+#kontaktform input, #kontaktform textarea{
+    width: 140px;
+    border-radius: 10px;
+    border:solid #8c8c8c 1px;
+    background-color: #f6f6f6;
+    height: 21px;
+}
+#kontaktform textarea{
+    height: 140px;
+    resize: none;
+}
+#kontakth2{
+    padding-left: 125px;
+    margin-bottom: 44px;
+}
+#kontakt{
+    display: flex;
+    flex-wrap: wrap;
+}
+#kontakt #map{
+    margin: 75px 0 0 90px;
+    width: 300px;
+    height: 240px;
+}
+#kontakt #mainimg{
+    height: 300px;
+    margin-left: 115px;
+}
+.formdiv button{
+    margin-left: 120px;
+    padding:9px 40px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+#kontaktinfo p{
+    text-align: right;
+    margin-bottom: 20px;
+}
+#kontaktinfo{
+    margin-top: 170px;
+    width: 320px;
+}
+#nyhederh2{
+    font-size: 16px;
+}
+.orange{
+    color: #f88805;
+    margin:22px 0 14px 0;
+}
+#nyheder{
+    margin-left: 110px;
+}
+#nyheder img{
+    margin-left: 290px;
+}
+.red{
+    color: red;
+    font-weight: bold;
+}
+#produkter{
+    margin: 40px 0 0 100px;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.produkt{
+    width: 33%;
+    display: flex;   
+    flex-wrap: wrap; 
+}
+.produkterimg img{
+    width: 100px;
+    height: auto;
+}
+.produktinfo p:first-of-type{
+margin-top: 15px;
+}
+.produktinfo .læsMere{
+    margin: 30px 0 0 0;
+}
+.produkt .info{
+    margin: 0 0 60px 40px;
+}
+.big{
+    font-size: 18px;
+}
+.big:last-of-type{
+    margin-top: 200px;
+}

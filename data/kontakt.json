@@ -13,5 +13,24 @@
             "pris": 900,
             "billede": "2_stribet_stil.jpg"
         }
-    ]
+    ],
+    "mainimg": "10_tern.jpg",
+    "info": [
+        {
+            "info": "Slipseknuden"
+        },
+        {
+            "info": "Slipsevej"
+        },
+        {
+            "info": "4000 Holbæk"
+        },
+        {
+            "info": "Telefon: 5944-1234"
+        },
+        {
+            "info": "slips@slipseknuden.dk"
+        }
+    ],
+    "map":"gmap.jpg"
 }
