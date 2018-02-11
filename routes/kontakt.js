@@ -5,4 +5,7 @@ module.exports = (app) => {
         log.log(req.connection.remoteAddress + "GET /kontakt");
         res.render("pages/kontakt", json)
     })
+    app.post("/kontakt", (req, res) => {
+        res.render("pages/kontakt", json)
+    })  
 }
