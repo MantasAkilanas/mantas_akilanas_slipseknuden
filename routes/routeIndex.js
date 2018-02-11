@@ -5,4 +5,5 @@ module.exports = (app) =>{
     require("./kontakt")(app);
     require("./nyheder")(app);
     require("./produkter")(app);
+    require("./admin")(app);
 }

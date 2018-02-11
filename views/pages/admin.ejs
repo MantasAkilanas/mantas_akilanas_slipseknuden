@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>admin</title>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <div id="formHolder">
+        <form>
+            <div>
+                <label for="navn">navn</label>
+                <input id="navn">
+            </div>
+            <div>
+                <label for="beskrivelse">beskrivelse</label>
+                <input id="beskrivelse">
+            </div>
+            <div>
+                <label for="billede">billede</label>
+                <input id="billede">
+            </div>
+        </form>
+        <form>
+            <input id="id" type="hidden">
+            <div>
+                <label for="navn2">navn</label>
+                <input id="navn2">
+            </div>
+            <div>
+                <label for="beskrivelse2">beskrivelse</label>
+                <input id="beskrivelse2">
+            </div>
+            <div>
+                <label for="billede2">billede</label>
+                <input id="billede2">
+            </div>
+        </form>
+    </div>
+    <div>
+        <button id="opret">opret</button>
+    </div>
+    <div id="keaper">
+        <div class="asd">
+            <div class="læsMere">navn</div>
+
+            <div class="læsMere">
+                beskrivelse
+            </div>
+            <div class="læsMere">
+                billede
+            </div>
+            <div class="læsMere">
+                knapper
+            </div>
+        </div>
+        <% data.forEach((element, index)=>{%>
+            <div class="asd">
+                <div>
+                    <%=element.navn%>
+                </div>
+                <div>
+                    <%=element.beskrivelse%>
+                </div>
+                <div>
+                    <%=element.billede%>
+                </div>
+                <div>
+                    <button class="redigere" data-id=<%=index%>>redigere</button>
+                    <button class="slet" data-id=<%=index%>>slet</button>
+                </div>
+            </div>
+            <%})%>
+    </div>
+    <script src="/js/admin.js"></script>
+</body>
+
+</html>

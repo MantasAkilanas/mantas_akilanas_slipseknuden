@@ -288,3 +288,11 @@ margin-top: 15px;
 .big:last-of-type{
     margin-top: 200px;
 }
+.asd{
+    display: flex;
+    justify-content: space-between;
+}
+#formHolder{
+    display: flex;
+    justify-content: space-between;
+}
